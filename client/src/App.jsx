@@ -1,40 +1,24 @@
-import { useEffect, useState } from 'react'
 import './App.css'
-import axios from "axios"
-const API_KEY = import.meta.env.API_KEY
+import { useContext } from 'react'
+import { GlobalContext } from './contexts/GlobalContext'
+import TestAPI from './components/TestAPI'
+import Header from './layout/Header'
+import Navbar from './layout/Navbar'
+
 
 export default function App() {
-
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios.get("https://sametceven-server.vercel.app/api",{ 
-      "headers": { 
-        "x-api-key": API_KEY 
-        }
-      }
-    )
-      .then((response) => {
-        setData(response.data.users)
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-  }, [])
-
-
-
+  const {darkMode} = useContext(GlobalContext)
 
   return (
-    <div>
-      <p className='bg-black text-white'>hello</p>
-      {data === undefined ? <p>Loading</p> :
-        data.map((datum) =>
-          <p key={datum}> {datum} </p>
-        )
-      }
-      <p>asdfads</p>
+    <div className={`${darkMode?"bg-c1 text-white":"bg-white"} flex justify-center`}>
+      <div className={`w-5xl max-w-5xl`}>
+        <Header></Header>
+        <Navbar></Navbar>
+        <TestAPI></TestAPI>
+      </div>
     </div>
   )
+
 }
 
 

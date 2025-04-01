@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require('express')
 const cors = require("cors")
 const projectData = require("./projectData.json")
@@ -6,7 +7,6 @@ const authenticateApiKey = require("./authenticateApiKey.js")
 
 const app = express()
 port = 5000
-
 
 app.use(cors())
 app.use(express.json())
@@ -29,3 +29,5 @@ app.post("/projectP",authenticateApiKey,(req,res)=>{
     const {id} = req.body
     res.json({id})
 })
+
+

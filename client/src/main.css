@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+
+@theme {
+    --font-primary: "Inter", "Roboto", "Libre Franklin",  "Satoshi", "sans-serif";
+    --font-satisfy: "Satisfy";
+
+    --color-c1: #1B262C;
+    --color-c2: #0F4C75;
+    --color-c3: #3282B8;
+    --color-c4: #BBE1FA;
+
+    --radius-my1:5px;
+    --radius-my2:10px;
+
+}
+
+
+body{
+  @apply font-primary;
+}
+
+
+
+
