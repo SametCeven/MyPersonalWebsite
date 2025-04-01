@@ -1,9 +1,15 @@
 const express = require('express')
 const cors = require("cors")
+const projectData = require("./projectData.json")
+const authenticateApiKey = require("./authenticateApiKey.js")
+
+
 const app = express()
 port = 5000
 
+
 app.use(cors())
+app.use(express.json())
 
 
 app.listen(port, () => {
@@ -12,6 +18,14 @@ app.listen(port, () => {
 
 
 app.get('/api', (req, res) => {
-    //res.json({"users":["user1","user2","user3"]})
     res.status(200).send("Back-end API works")
+})
+
+app.get("/project",authenticateApiKey,(req,res)=>{
+    res.status(200).json(projectData)
+})
+
+app.post("/projectP",authenticateApiKey,(req,res)=>{
+    const {id} = req.body
+    res.json({id})
 })
