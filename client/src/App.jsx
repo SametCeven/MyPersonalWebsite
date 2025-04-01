@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import axios from "axios"
+const API_KEY = import.meta.env.API_KEY
 
 export default function App() {
 
@@ -8,7 +9,7 @@ export default function App() {
   useEffect(() => {
     axios.get("https://sametceven-server.vercel.app/api",{ 
       "headers": { 
-        "x-api-key": process.env.API_KEY 
+        "x-api-key": API_KEY 
         }
       }
     )
