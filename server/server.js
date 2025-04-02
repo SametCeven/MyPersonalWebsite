@@ -1,8 +1,8 @@
 require("dotenv").config()
 const express = require('express')
 const cors = require("cors")
-const projectData = require("./projectData.json")
-const authenticateApiKey = require("./authenticateApiKey.js")
+const projectData = require("./data/projectData.json")
+const authenticateApiKey = require("./services/authenticateApiKey.js")
 
 
 const app = express()

@@ -1,7 +1,7 @@
 import "./Header.css"
 import { useContext } from "react"
 import { GlobalContext } from "../contexts/GlobalContext"
-import SliderCheckbox from "../components/sliderCheckbox"
+import SliderCheckbox from "../components/SliderCheckbox"
 
 export default function Header() {
     const { darkMode, setDarkMode } = useContext(GlobalContext)
@@ -14,7 +14,7 @@ export default function Header() {
     
 
     return (
-        <header className={`py-5 px-30 flex justify-end`}>
+        <header className={`py-5`}>
             <SliderCheckbox value={darkMode} handleValue={handleDarkMode} text="Dark Mode"></SliderCheckbox>
         </header>
         
