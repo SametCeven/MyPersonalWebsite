@@ -1,16 +1,18 @@
-import { useContext } from "react"
-import "./MainLayout.css"
-import { GlobalContext } from "../contexts/GlobalContext"
+import Skills from "../components/Skills"
+import Projects from "../components/Projects"
+import WorkExperience from "../components/WorkExperience"
+import Education from "../components/Education"
 
 export default function MainLayout() {
-    const { data, loading, error } = useContext(GlobalContext)
+   
 
     return (
         <main className="w-100vw h-100vh">
-            <p>main</p>
-            {loading ? <p>Loading</p> : data.projects.projects.map((project,index)=>
-                <img key={index} src={project.imageUrl} alt={project.name} />
-            )}
+            
+            <Skills></Skills>
+            <Projects></Projects>
+            <WorkExperience></WorkExperience>
+            <Education></Education>
             
                         
         </main>

@@ -12,13 +12,13 @@ export default function App() {
 
   return (
     <div className={`${darkMode ? "bg-c1 text-white" : "bg-white"} flex justify-center`}>
-      <div className='w-5xl max-w-5xl flex'>
+      <div className='flex'>
         <div className={`w-3xs max-w-3xs`}>
           <Header></Header>
           <Navbar></Navbar>
           <Profile></Profile>
         </div>
-        <div className={`w-3xl max-w-3xl py-20 px-10`}>
+        <div className={`w-5xl max-w-5xl py-20`}>
           <MainLayout></MainLayout>
         </div>
       </div>
