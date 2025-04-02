@@ -1,10 +1,13 @@
 import axios from "axios";
 const API_KEY = import.meta.env.VITE_API_KEY
 
+//baseURL: "https://sametceven-server.vercel.app",
+
 const axiosInstance = axios.create({
-    baseURL: "https://sametceven-server.vercel.app",
-    headers:{
-        "x-api-key":API_KEY,
+    baseURL: "http://localhost:5000",
+    headers: {
+        "x-api-key": API_KEY,
+        "Content-Type": "application/json"
     }
 })
 

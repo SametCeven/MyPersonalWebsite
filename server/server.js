@@ -1,8 +1,9 @@
 require("dotenv").config()
 const express = require('express')
 const cors = require("cors")
-const projectData = require("./data/projectData.json")
 const authenticateApiKey = require("./services/authenticateApiKey.js")
+const projects = require("./data/projects.json")
+const profile = require("./data/profile.json")
 
 
 const app = express()
@@ -21,11 +22,15 @@ app.get('/api', (req, res) => {
     res.status(200).send("Back-end API works")
 })
 
-app.get("/project",authenticateApiKey,(req,res)=>{
-    res.status(200).json(projectData)
+app.get("/data",authenticateApiKey,(req,res)=>{
+    const combinedData = {
+        projects,
+        profile
+    }
+    res.status(200).json(combinedData)
 })
 
-app.post("/projectP",authenticateApiKey,(req,res)=>{
+app.post("/dataPost",authenticateApiKey,(req,res)=>{
     const {id} = req.body
     res.json({id})
 })

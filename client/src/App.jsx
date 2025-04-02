@@ -3,8 +3,8 @@ import { useContext } from 'react'
 import { GlobalContext } from './contexts/GlobalContext'
 import Header from './layout/Header'
 import Navbar from './layout/Navbar'
-import Main from './layout/Main'
 import Profile from './layout/Profile'
+import MainLayout from './layout/MainLayout'
 
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
           <Profile></Profile>
         </div>
         <div className={`w-3xl max-w-3xl py-20 px-10`}>
-          <Main></Main>
+          <MainLayout></MainLayout>
         </div>
       </div>
     </div>

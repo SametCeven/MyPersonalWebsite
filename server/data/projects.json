@@ -1,0 +1,77 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "dateCreated": "30.12.2024",
+            "name": "Witflix",
+            "description": [
+                "Netflix inspired UI project.",
+                "Uses plain html and css without any frameworks or libraries."
+            ],
+            "tags": [
+                "html",
+                "css"
+            ],
+            "url": "https://wit-flix-theta.vercel.app/",
+            "githubUrl": "https://github.com/SametCeven/WitFlix",
+            "imageUrl": "https://imgur.com/g2N8yEQ.png",
+            "videoUrl": ""
+        },
+        {
+            "id": "2",
+            "dateCreated": "25.01.2025",
+            "name": "Pizza",
+            "description": [
+                "Pizza ordering front-end application.",
+                "Using prop-lifting for state management.",
+                "Data management of forms."
+            ],
+            "tags": [
+                "react.js",
+                "css",
+                "cypress"
+            ],
+            "url": "https://pizza-seven-wheat.vercel.app/",
+            "githubUrl": "https://github.com/SametCeven/Pizza",
+            "imageUrl": "https://imgur.com/azV0HJY.png",
+            "videoUrl": ""
+        },
+        {
+            "id": "3",
+            "dateCreated": "14.02.2025",
+            "name": "Recipe",
+            "description": [
+                "Recipe listing front-end application.",
+                "Uses Redux for global state management"
+            ],
+            "tags": [
+                "react.js",
+                "redux",
+                "tailwindcss"
+            ],
+            "url": "https://recipe-chi-eight.vercel.app/",
+            "githubUrl": "https://github.com/SametCeven/Recipe",
+            "imageUrl": "https://imgur.com/Ct8DGmg.png",
+            "videoUrl": ""
+        },
+        {
+            "id": "4",
+            "dateCreated": "21.02.2025",
+            "name": "PersonalWebsite",
+            "description": [
+                "Generic personal website",
+                "Uses Context API for global state management.",
+                "Toastify messages to inform user for language and darkmode changes"
+            ],
+            "tags": [
+                "react.js",
+                "tailwindcss",
+                "cypress"
+            ],
+            "url": "https://personal-website-ochre-one-86.vercel.app/",
+            "githubUrl": "https://github.com/SametCeven/PersonalWebsite",
+            "imageUrl": "https://imgur.com/Hz8iDtC.png",
+            "videoUrl": ""
+        }
+    ]
+}
