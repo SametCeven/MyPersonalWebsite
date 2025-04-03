@@ -18,7 +18,7 @@ export default function App() {
           <Navbar></Navbar>
           <Profile></Profile>
         </div>
-        <div className={`w-5xl max-w-5xl py-20`}>
+        <div className={`w-5xl max-w-5xl`}>
           <MainLayout></MainLayout>
         </div>
       </div>

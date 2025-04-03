@@ -25,6 +25,18 @@ body{
   @apply font-primary;
 }
 
+.initial{
+  @apply flex flex-col border-b-1 py-15;
+}
 
+.title1{
+  @apply py-5 text-5xl;
+}
 
+.title2{
+  @apply text-xl font-bold;
+}
 
+.tag{
+  @apply p-1 text-c4 border-1 border-c4 rounded-my1;
+}

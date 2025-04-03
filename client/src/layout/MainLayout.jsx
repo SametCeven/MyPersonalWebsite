@@ -7,7 +7,7 @@ export default function MainLayout() {
    
 
     return (
-        <main className="w-100vw h-100vh">
+        <main className="">
             
             <Skills></Skills>
             <Projects></Projects>

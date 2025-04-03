@@ -1,0 +1,72 @@
+{
+    "workExperience":
+    [
+        {
+            "id" : 1,
+            "company" : "CARUS",
+            "startingDate" : "06.2022",
+            "endDate" : "07.2023",
+            "title" : "International Business Analyst",
+            "description" : 
+            [
+                "Carus is a group firm of Saat&Saat, a well-known global retail company. Carus specializes in e-commerce and bag industry"
+            ],
+            "tags" : 
+            [
+                "financial reporting",
+                "financial modelling",
+                "pricing",
+                "sales reporting",
+                "strategy"
+            ]   
+        },
+        {
+            "id" : 2,
+            "company" : "BESFIN Financial Services Consultancy and Trade Co.",
+            "startingDate" : "03.2020",
+            "endDate" : "10.2020",
+            "title" : "Consultant",
+            "description" : 
+            [
+                "BESFIN is a corporate finance consultancy firm providing advisory services in regards to M&A activities, project finance deals and, corporate finance."
+            ],
+            "tags" : 
+            [
+                "financial reporting",
+                "financial modelling"
+            ]   
+        },
+        {
+            "id" : 3,
+            "company" : "QNB Finansbank",
+            "startingDate" : "11.2017",
+            "endDate" : "08.2018",
+            "title" : "Assistant Supervisor",
+            "description" : 
+            [
+                "QNB Finansbank is one of the largest commercial banks in Turkey.."
+            ],
+            "tags" : 
+            [
+                "financial reporting",
+                "sales"
+            ]   
+        },
+        {
+            "id" : 4,
+            "company" : "Groupe Renault",
+            "startingDate" : "07.2016",
+            "endDate" : "09.2016",
+            "title" : "R&D Intern",
+            "description" : 
+            [
+                ""
+            ],
+            "tags" : 
+            [
+                "MATLAB",
+                "numerical analysis"
+            ]   
+        }
+    ]
+}

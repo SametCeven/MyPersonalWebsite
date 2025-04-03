@@ -1,0 +1,58 @@
+{
+    "skills": {
+        "frontend": [
+            {
+                "id": "4",
+                "name": "JavaScript",
+                "url": "https://imgur.com/kh9QNDt.png"
+            },
+            {
+                "id": "1",
+                "name": "React.js",
+                "url": "https://imgur.com/VJkhJEj.png"
+            },
+            {
+                "id": "8",
+                "name": "Redux",
+                "url": "https://imgur.com/jIsH6DB.png"
+            },
+            {
+                "id": "6",
+                "name": "TailwindCSS",
+                "url": "https://imgur.com/VUZavAs.png"
+            },
+            {
+                "id": "9",
+                "name": "Cypress",
+                "url": "https://imgur.com/9yrzMBr.png"
+            }
+        ],
+        "backend": [
+            {
+                "id": "2",
+                "name": "Node.js",
+                "url": "https://imgur.com/0rRThfq.png"
+            },
+            {
+                "id": "3",
+                "name": "Express.js",
+                "url": "https://imgur.com/8jmNYSR.png"
+            },
+            {
+                "id": "5",
+                "name": "Java",
+                "url": "https://imgur.com/9iLQbKj.png"
+            },
+            {
+                "id": "7",
+                "name": "PostgreSQL",
+                "url": "https://imgur.com/ZrXTf86.png"
+            },
+            {
+                "id": "10",
+                "name": "Hybernate",
+                "url": "https://imgur.com/uSln0bP.png"
+            }
+        ]
+    }
+}

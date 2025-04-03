@@ -2,8 +2,10 @@ require("dotenv").config()
 const express = require('express')
 const cors = require("cors")
 const authenticateApiKey = require("./services/authenticateApiKey.js")
-const projects = require("./data/projects.json")
 const profile = require("./data/profile.json")
+const skills = require("./data/skills.json")
+const projects = require("./data/projects.json")
+const workExperience = require("./data/workExperience.json")
 
 
 const app = express()
@@ -24,8 +26,10 @@ app.get('/api', (req, res) => {
 
 app.get("/data",authenticateApiKey,(req,res)=>{
     const combinedData = {
+        profile,
+        skills,
         projects,
-        profile
+        workExperience,
     }
     res.status(200).json(combinedData)
 })
