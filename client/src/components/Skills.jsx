@@ -2,11 +2,11 @@ import { useContext } from "react"
 import { GlobalContext } from "../contexts/GlobalContext"
 
 export default function Skills() {
-    const { data, loading, error } = useContext(GlobalContext)
+    const { data, loading, error, skillsSectionRef } = useContext(GlobalContext)
 
 
     return (
-        <section className="initial">
+        <section className="flex flex-col border-b-1 pb-15" ref={skillsSectionRef}>
 
             <h1 className="title1">Skills</h1>
 

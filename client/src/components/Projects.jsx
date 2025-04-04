@@ -3,11 +3,11 @@ import { GlobalContext } from "../contexts/GlobalContext"
 
 
 export default function Projects() {
-    const { data, loading, error } = useContext(GlobalContext)
+    const { data, loading, error, projectsSectionRef } = useContext(GlobalContext)
 
 
     return (
-        <section className="initial">
+        <section className="initial" ref={projectsSectionRef}>
 
             <h1 className="title1">Projects</h1>
 

@@ -3,11 +3,11 @@ import { GlobalContext } from "../contexts/GlobalContext"
 
 
 export default function Education() {
-    const { data, loading, error } = useContext(GlobalContext)
+    const { data, loading, error, educationSectionRef } = useContext(GlobalContext)
 
 
     return (
-        <section className="initial">
+        <section className="flex flex-col pt-15" ref={educationSectionRef}>
 
             <h1 className="title1">Education</h1>
 
@@ -15,14 +15,14 @@ export default function Education() {
 
                 <div className="flex gap-20">
                     {loading ? <p>Loading</p> : data.education.schools.map((school, index) =>
-                        <div className="flex flex-col gap-1 w-72">
-                            <span className="title2"> {school.degree} </span>
-                            <span className=""> {school.school} </span>
-                            <span> {school.department} </span>
+                        <div className="flex flex-col gap-1 w-72" key={index}>
+                            <span className="title2" key={school.degree}> {school.degree} </span>
+                            <span key={school.school}> {school.school} </span>
+                            <span key={school.department}> {school.department} </span>
                             <div>
-                                <span> {school.startDate} </span>
+                                <span key={school.startDate}> {school.startDate} </span>
                                 <span> - </span>
-                                <span> {school.endDate} </span>
+                                <span key={school.endDate}> {school.endDate} </span>
                             </div>
                             <span> {school.description} </span>
                         </div>
@@ -31,14 +31,14 @@ export default function Education() {
                 
                 <div className="flex gap-20">
                     {loading ? <p>Loading</p> : data.education.others.map((other, index) =>
-                        <div className="flex flex-col gap-1 w-72">
-                            <span className="title2"> {other.name} </span>
-                            <div>
-                                <span> {other.startDate} </span>
+                        <div className="flex flex-col gap-1 w-72" key={index}>
+                            <span className="title2" key={other.name}> {other.name} </span>
+                            <div key={index}>
+                                <span key={other.startDate}> {other.startDate} </span>
                                 <span> - </span>
-                                <span> {other.endDate} </span>
+                                <span key={other.endDate}> {other.endDate} </span>
                             </div>
-                            <span > {other.description} </span>
+                            <span key={other.description}> {other.description} </span>
                         </div>
                     )}
                 </div>
