@@ -6,7 +6,7 @@ import { faInternetExplorer } from '@fortawesome/free-brands-svg-icons'
 
 
 export default function Projects() {
-    const { data, loading, error, projectsSectionRef } = useContext(GlobalContext)
+    const { data, loading, error, projectsSectionRef, darkMode } = useContext(GlobalContext)
 
 
     return (
@@ -37,14 +37,14 @@ export default function Projects() {
                             </ul>
                             <div className="flex gap-5">
                                 {project.tags.map((tag, index) =>
-                                    <span className="tag" key={index}>{tag}</span>
+                                    <span className={`${darkMode ? "tag-dm" : "tag"}`} key={index}>{tag}</span>
                                 )}
                             </div>
                             <div className="flex gap-5">
-                                <a className="logo" key={project.githubUrl} href={project.githubUrl} target="_blank">
+                                <a className={`${darkMode ? "logo-hover-dm" : "logo-hover"}`} key={project.githubUrl} href={project.githubUrl} target="_blank">
                                     <FontAwesomeIcon icon={faGithub} className="text-2xl" />
                                 </a>
-                                <a className="logo" key={project.url} href={project.url} target="_blank">
+                                <a className={`${darkMode ? "logo-hover-dm" : "logo-hover"}`} key={project.url} href={project.url} target="_blank">
                                     <FontAwesomeIcon icon={faInternetExplorer} className="text-2xl" />
                                 </a>
                             </div>

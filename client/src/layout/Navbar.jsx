@@ -6,7 +6,7 @@ import { faComputer, faListCheck, faBriefcase, faBook } from '@fortawesome/free-
 
 
 export default function Navbar() {
-    const { skillsSectionRef, projectsSectionRef, workExperienceSectionRef, educationSectionRef, scrollContainerRef } = useContext(GlobalContext)
+    const { skillsSectionRef, projectsSectionRef, workExperienceSectionRef, educationSectionRef, scrollContainerRef, darkMode } = useContext(GlobalContext)
     const [activeSection, setActiveSection] = useState("skills");
 
     useEffect(() => {
@@ -73,7 +73,7 @@ export default function Navbar() {
 
 
     return (
-        <nav className="sticky top-1 z-99 flex justify-between gap-5 font-bold text-xs py-1 px-5 w-[500px] bg-c3 rounded-my2">
+        <nav className={`sticky top-1 z-99 flex justify-between gap-5 font-bold text-xs py-1 px-5 w-[500px] rounded-my2 text-white bg-c3`}>
 
             <div className={`nav-item ${activeSection === "skills" ? "nav-item-active" : ""}`} onClick={() => scrollToSection(skillsSectionRef)}>
                 <FontAwesomeIcon icon={faComputer} />

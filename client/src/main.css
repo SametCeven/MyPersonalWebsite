@@ -21,10 +21,6 @@
 }
 
 
-body{
-  @apply font-primary;
-}
-
 .initial{
   @apply flex flex-col border-b-1 py-15;
 }
@@ -38,6 +34,10 @@ body{
 }
 
 .tag{
+  @apply p-1 text-c2 border-1 border-c2 rounded-my1;
+}
+
+.tag-dm{
   @apply p-1 text-c4 border-1 border-c4 rounded-my1;
 }
 
@@ -63,10 +63,28 @@ body{
   @apply bg-c1;
 }
 
-.logo{
+.logo-hover{
+  @apply transition duration-300 hover:text-c2 hover:opacity-80 hover:scale-75;
+}
+
+.logo-hover-noclick{
+  @apply transition duration-300 hover:text-c2 hover:opacity-80 hover:scale-150;
+}
+
+.logo-hover-dm{
   @apply transition duration-300 hover:text-c4 hover:opacity-80 hover:scale-75;
 }
 
-.logo-noclick{
+.logo-hover-noclick-dm{
   @apply transition duration-300 hover:text-c4 hover:opacity-80 hover:scale-150;
 }
+
+.logo-dm{
+  @apply text-3xl text-c4;
+}
+
+.logo{
+  @apply text-3xl text-c2;
+}
+
+
