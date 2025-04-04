@@ -3,7 +3,7 @@ import "./SliderCheckbox.css"
 export default function SliderCheckbox({text,value,handleValue}){
 
     return(
-        <div className="flex gap-1 items-center">
+        <div className="flex gap-1 items-center pt-20 max-xl:pt-0 w-full max-xl:justify-center ">
                 <label className="switch flex items-center">
                     <input
                         type="checkbox"

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 import { GlobalContext } from "../contexts/GlobalContext"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,90 +7,49 @@ import { faComputer, faListCheck, faBriefcase, faBook } from '@fortawesome/free-
 
 export default function Navbar() {
     const { skillsSectionRef, projectsSectionRef, workExperienceSectionRef, educationSectionRef, scrollContainerRef, darkMode } = useContext(GlobalContext)
-    const [activeSection, setActiveSection] = useState("skills");
 
-    useEffect(() => {
-        const container = scrollContainerRef.current
-        const target = skillsSectionRef.current
-        if (container && target) {
-            container.scrollTo({
-                top: target.offsetTop - 100,
-                behavior: "smooth"
-            })
-            setActiveSection("skills")
-            setTimeout(()=>{
-                setupOberserver()
-            },500)
-        }
-    }, [])
-
-    function setupOberserver(){
-        const container = scrollContainerRef.current
-        if (!container) return
-
-        const observer = new IntersectionObserver(
-            entries => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id)
-                    }
-                })
-            },
-            {
-                root: container,
-                threshold: 0.5,
-            }
-        )
-
-        const sections = [skillsSectionRef, projectsSectionRef, workExperienceSectionRef, educationSectionRef]
-        sections.forEach((section) => {
-            if (section.current) {
-                observer.observe(section.current)
-            }
-        })
-
-        return () => {
-            sections.forEach((section) => {
-                if (section.current) {
-                    observer.unobserve(section.current)
-                }
-            })
-        }
-
+    function getScrollOffset(){
+        let size = window.innerWidth 
+        if(size > 1200) return 100
+        else if(size > 1000) return 250
+        else if(size > 750) return 275
+        else if(size > 400) return 400
+        else if (size > 0) return 350
     }
 
 
-    function scrollToSection(elementRef) {
+    function scrollToSection(sectionRef) {
         const container = scrollContainerRef.current
-        const target = elementRef.current
+        const target = sectionRef.current
         if (container && target) {
             container.scrollTo({
-                top: target.offsetTop - 100,
+                top: target.offsetTop - getScrollOffset(),
                 behavior: "smooth",
             })
         }
     }
 
 
-    return (
-        <nav className={`sticky top-1 z-99 flex justify-between gap-5 font-bold text-xs py-1 px-5 w-[500px] rounded-my2 text-white bg-c3`}>
 
-            <div className={`nav-item ${activeSection === "skills" ? "nav-item-active" : ""}`} onClick={() => scrollToSection(skillsSectionRef)}>
+    return (
+        <nav className={`sticky top-1 z-99 flex justify-between items-center gap-5 font-bold text-xs py-1 px-5 w-[500px] rounded-my2 text-white bg-c3 max-md:gap-1 max-md:w-[300px] max-md:flex-wrap`}>
+
+            <div className={`nav-item`} onClick={() => scrollToSection(skillsSectionRef)}>
                 <FontAwesomeIcon icon={faComputer} />
                 <Link>Skills</Link>
             </div>
 
-            <div className={`nav-item ${activeSection === "projects" ? "nav-item-active" : ""}`} onClick={() => scrollToSection(projectsSectionRef)} >
+            <div className={`nav-item`} onClick={() => scrollToSection(projectsSectionRef)} >
                 <FontAwesomeIcon icon={faListCheck} />
                 <Link>Projects</Link>
             </div>
 
-            <div className={`nav-item ${activeSection === "workExperience" ? "nav-item-active" : ""}`} onClick={() => scrollToSection(workExperienceSectionRef)} >
+            <div className={`nav-item`} onClick={() => scrollToSection(workExperienceSectionRef)} >
                 <FontAwesomeIcon icon={faBriefcase} />
                 <Link >Work Experience</Link>
             </div>
 
-            <div className={`nav-item ${activeSection === "education" ? "nav-item-active" : ""}`} onClick={() => scrollToSection(educationSectionRef)}>
+            <div className={`nav-item`} onClick={() => scrollToSection(educationSectionRef)}>
                 <FontAwesomeIcon icon={faBook} />
                 <Link  >Education</Link>
             </div>

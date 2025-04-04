@@ -57,7 +57,7 @@
   @apply flex items-center gap-2 border-b border-transparent transition-all p-1 rounded-my2;
 }
 .nav-item:hover{
-  @apply border-b border-c3;
+  @apply bg-c1
 }
 .nav-item-active{
   @apply bg-c1;

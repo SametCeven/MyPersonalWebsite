@@ -13,7 +13,7 @@ export default function Education() {
 
             <div className="flex flex-col gap-5 text-xs">
 
-                <div className="flex">
+                <div className="flex max-xl:flex-col max-xl:gap-5">
                     {loading ? <p>Loading</p> : data.education.schools.map((school, index) =>
                         <div className="flex items-center gap-5" key={index}>
                             <div>

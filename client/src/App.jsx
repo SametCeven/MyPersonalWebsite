@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { GlobalContext } from './contexts/GlobalContext'
-import Header from './layout/Header'
 import Navbar from './layout/Navbar'
 import Profile from './layout/Profile'
 import MainLayout from './layout/MainLayout'
@@ -10,18 +9,18 @@ export default function App() {
   const { darkMode, scrollContainerRef } = useContext(GlobalContext)
 
   return (
-    <div className={`${darkMode ? "bg-c1 text-white" : "bg-white"} flex justify-center transition duration-300 font-primary`}>
+    <div className={`${darkMode ? "bg-c1 text-white" : "bg-white"} flex justify-center transition duration-300 font-primary max-xl:w-screen`}>
 
-      <div className='flex h-screen items-center'>
-        <div className={`flex flex-col justify-between gap-80 w-3xs max-w-3xs mx-10`}>
+      <div className='flex h-screen items-center max-xl:flex-col'>
+
+        <div className={`flex flex-col justify-between w-3xs max-w-3xs max-xl:flex-row max-xl:justify-center max-xl:max-w-screen`}>
           <Profile></Profile>
-          <Header></Header>
         </div>
 
-        <div>
+        <div className='max-md:flex flex-col items-center'>
           <Navbar></Navbar>
-          <div className={`w-5xl max-w-5xl h-[800px] mt-3 border rounded-my2 p-5 ${darkMode ? "border-c4": "border-c2"}`}>
-            <div className='h-[750px] overflow-y-auto scrollbar-custom pr-5' ref={scrollContainerRef}>
+          <div className={`max-w-5xl h-[800px] mt-3 border rounded-my2 p-5 ${darkMode ? "border-c4": "border-c2"} max-xl:h-[500px] max-lg:h-[400px] max-lg:max-w-3xl max-md:max-w-[360px] max-sm::max-w-[360px]`}>
+            <div className='h-[750px] overflow-y-auto scrollbar-custom pr-5 max-xl:h-[450px] max-lg:h-[300px] ' ref={scrollContainerRef}>
               <MainLayout></MainLayout>
             </div>
           </div>

@@ -14,18 +14,19 @@ export default function Projects() {
 
             <h1 className="title1">Projects</h1>
 
-            <div className="flex flex-wrap justify-between gap-15">
+            <div className="flex flex-wrap justify-between gap-15 max-xl:flex-col">
 
                 {loading ? <p>Loading</p> : data.projects.projects.map((project, index) =>
 
-                    <div className="flex gap-10  text-xs" key={index}>
+                    <div className="flex gap-10 text-xs max-lg:flex-col max-xl:gap-5" key={index}>
 
                         <div>
                             <a href={project.githubUrl} target="_blank">
                                 <img className="w-72 h-48 object-cover rounded-my2" key={index} src={project.imageUrl} alt={project.name} />
                             </a>
                         </div>
-                        <div className="flex flex-col justify-between">
+
+                        <div className="flex flex-col justify-between max-xl:gap-5">
                             <a href={project.githubUrl} target="_blank">
                                 <h2 className="title2" key={project.name}> {project.name} </h2>
                             </a>
