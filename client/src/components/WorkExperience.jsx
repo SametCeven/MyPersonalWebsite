@@ -15,26 +15,19 @@ export default function WorkExperience() {
 
                 {loading ? <p>Loading</p> : data.workExperience.workExperience.map((work, index) =>
 
-                    <div className="flex flex-col gap-5 w-full" key={index}>
-                        <div className="flex justify-between">
-                            <div className="flex flex-col gap-1">
-                                <span className="title2"> {work.title} </span>
-                                <span className="title2"> {work.company} </span>
-                                <div>
-                                    <span> {work.startingDate} </span>
-                                    <span> - </span>
-                                    <span> {work.endDate} </span>
-                                </div>
+                    <div className="flex flex-col gap-3 w-full" key={index}>
+                        <div className="flex flex-col">
+                            <span className="title2"> {work.title} </span>
+                            <span className="title2"> {work.company} </span>
+                            <div>
+                                <span> {work.startingDate} </span>
+                                <span> - </span>
+                                <span> {work.endDate} </span>
                             </div>
                         </div>
                         <ul className="">
                             {work.description.map((desc, index) =>
                                 <li key={index}>{desc}</li>
-                            )}
-                        </ul>
-                        <ul className="flex gap-5">
-                            {work.tags.map((tag, index) =>
-                                <li className="tag" key={index}>{tag}</li>
                             )}
                         </ul>
                     </div>

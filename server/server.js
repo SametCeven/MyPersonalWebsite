@@ -6,7 +6,7 @@ const profile = require("./data/profile.json")
 const skills = require("./data/skills.json")
 const projects = require("./data/projects.json")
 const workExperience = require("./data/workExperience.json")
-
+const education = require("./data/education.json")
 
 const app = express()
 port = 5000
@@ -30,6 +30,7 @@ app.get("/data",authenticateApiKey,(req,res)=>{
         skills,
         projects,
         workExperience,
+        education
     }
     res.status(200).json(combinedData)
 })

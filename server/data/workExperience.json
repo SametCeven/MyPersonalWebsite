@@ -9,16 +9,9 @@
             "title" : "International Business Analyst",
             "description" : 
             [
-                "Carus is a group firm of Saat&Saat, a well-known global retail company. Carus specializes in e-commerce and bag industry"
-            ],
-            "tags" : 
-            [
-                "financial reporting",
-                "financial modelling",
-                "pricing",
-                "sales reporting",
-                "strategy"
-            ]   
+                "Carus is a group firm of Saat&Saat, a well-known global retail company. Carus specializes in e-commerce and bag industry.",
+                "Responsbile for financial reporting, financial modelling, sales reporting and pricing."
+            ]
         },
         {
             "id" : 2,
@@ -28,13 +21,9 @@
             "title" : "Consultant",
             "description" : 
             [
-                "BESFIN is a corporate finance consultancy firm providing advisory services in regards to M&A activities, project finance deals and, corporate finance."
-            ],
-            "tags" : 
-            [
-                "financial reporting",
-                "financial modelling"
-            ]   
+                "BESFIN is a corporate finance consultancy firm providing advisory services in regards to M&A activities, project finance deals and, corporate finance.",
+                "Responsbile for financial modelling, financial due diligence and industry research."
+            ]
         },
         {
             "id" : 3,
@@ -44,13 +33,9 @@
             "title" : "Assistant Supervisor",
             "description" : 
             [
-                "QNB Finansbank is one of the largest commercial banks in Turkey.."
-            ],
-            "tags" : 
-            [
-                "financial reporting",
-                "sales"
-            ]   
+                "QNB Finansbank is one of the largest commercial banks in Turkey.",
+                "Responsible for financial analysis and sales."
+            ]
         },
         {
             "id" : 4,
@@ -60,13 +45,8 @@
             "title" : "R&D Intern",
             "description" : 
             [
-                ""
-            ],
-            "tags" : 
-            [
-                "MATLAB",
-                "numerical analysis"
-            ]   
+                "Responsible for conducting numerical analysis via MATLAB for the new advanced front lightning system."
+            ] 
         }
     ]
 }

@@ -18,7 +18,7 @@ export default function App() {
           <Navbar></Navbar>
           <Profile></Profile>
         </div>
-        <div className={`w-5xl max-w-5xl`}>
+        <div className={`w-5xl max-w-5xl h-screen overflow-y-auto`}>
           <MainLayout></MainLayout>
         </div>
       </div>
