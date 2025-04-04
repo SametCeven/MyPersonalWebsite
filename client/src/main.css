@@ -30,7 +30,7 @@ body{
 }
 
 .title1{
-  @apply py-5 text-5xl;
+  @apply py-5 text-5xl text-c3;
 }
 
 .title2{
@@ -53,6 +53,20 @@ body{
   border-radius: var(--radius-my2);
 }
 
+.nav-item{
+  @apply flex items-center gap-2 border-b border-transparent transition-all p-1 rounded-my2;
+}
 .nav-item:hover{
-  @apply border-b-1;
+  @apply border-b border-c3;
+}
+.nav-item-active{
+  @apply bg-c1;
+}
+
+.logo{
+  @apply transition duration-300 hover:text-c4 hover:opacity-80 hover:scale-75;
+}
+
+.logo-noclick{
+  @apply transition duration-300 hover:text-c4 hover:opacity-80 hover:scale-150;
 }

@@ -8,7 +8,6 @@ export default function MainLayout() {
 
     return (
         <main className="">
-            
             <Skills></Skills>
             <Projects></Projects>
             <WorkExperience></WorkExperience>

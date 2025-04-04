@@ -10,8 +10,9 @@
             "description" : 
             [
                 "Carus is a group firm of Saat&Saat, a well-known global retail company. Carus specializes in e-commerce and bag industry.",
-                "Responsbile for financial reporting, financial modelling, sales reporting and pricing."
-            ]
+                "Responsible for financial reporting, financial modelling, sales reporting and pricing."
+            ],
+            "logoUrl" : "https://imgur.com/wUsvtDG.png"
         },
         {
             "id" : 2,
@@ -22,8 +23,9 @@
             "description" : 
             [
                 "BESFIN is a corporate finance consultancy firm providing advisory services in regards to M&A activities, project finance deals and, corporate finance.",
-                "Responsbile for financial modelling, financial due diligence and industry research."
-            ]
+                "Responsible for financial modelling, financial due diligence and industry research."
+            ],
+            "logoUrl" : "https://imgur.com/zhWTreD.png"
         },
         {
             "id" : 3,
@@ -35,7 +37,8 @@
             [
                 "QNB Finansbank is one of the largest commercial banks in Turkey.",
                 "Responsible for financial analysis and sales."
-            ]
+            ],
+            "logoUrl" : "https://imgur.com/ww8Ysp8.png"
         },
         {
             "id" : 4,
@@ -46,7 +49,8 @@
             "description" : 
             [
                 "Responsible for conducting numerical analysis via MATLAB for the new advanced front lightning system."
-            ] 
-        }
+            ],
+            "logoUrl" : "https://imgur.com/n8sJizt.png"
+         }
     ]
 }

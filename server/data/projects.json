@@ -1,20 +1,40 @@
 {
     "projects": [
         {
-            "id": "1",
-            "dateCreated": "30.12.2024",
-            "name": "Witflix",
+            "id": "4",
+            "dateCreated": "21.02.2025",
+            "name": "PersonalWebsite",
             "description": [
-                "Netflix inspired UI project.",
-                "Uses plain html and css without any frameworks or libraries."
+                "Generic personal website",
+                "Uses Context API for global state management.",
+                "Toastify messages to inform user for language and darkmode changes"
             ],
             "tags": [
-                "html",
-                "css"
+                "react.js",
+                "tailwindcss",
+                "cypress"
             ],
-            "url": "https://wit-flix-theta.vercel.app/",
-            "githubUrl": "https://github.com/SametCeven/WitFlix",
-            "imageUrl": "https://imgur.com/g2N8yEQ.png",
+            "url": "https://personal-website-ochre-one-86.vercel.app/",
+            "githubUrl": "https://github.com/SametCeven/PersonalWebsite",
+            "imageUrl": "https://imgur.com/Hz8iDtC.png",
+            "videoUrl": ""
+        },
+        {
+            "id": "3",
+            "dateCreated": "14.02.2025",
+            "name": "Recipe",
+            "description": [
+                "Recipe listing front-end application.",
+                "Uses Redux for global state management"
+            ],
+            "tags": [
+                "react.js",
+                "redux",
+                "tailwindcss"
+            ],
+            "url": "https://recipe-chi-eight.vercel.app/",
+            "githubUrl": "https://github.com/SametCeven/Recipe",
+            "imageUrl": "https://imgur.com/Ct8DGmg.png",
             "videoUrl": ""
         },
         {
@@ -37,40 +57,20 @@
             "videoUrl": ""
         },
         {
-            "id": "3",
-            "dateCreated": "14.02.2025",
-            "name": "Recipe",
+            "id": "1",
+            "dateCreated": "30.12.2024",
+            "name": "Witflix",
             "description": [
-                "Recipe listing front-end application.",
-                "Uses Redux for global state management"
+                "Netflix inspired UI project.",
+                "Uses plain html and css without any frameworks or libraries."
             ],
             "tags": [
-                "react.js",
-                "redux",
-                "tailwindcss"
+                "html",
+                "css"
             ],
-            "url": "https://recipe-chi-eight.vercel.app/",
-            "githubUrl": "https://github.com/SametCeven/Recipe",
-            "imageUrl": "https://imgur.com/Ct8DGmg.png",
-            "videoUrl": ""
-        },
-        {
-            "id": "4",
-            "dateCreated": "21.02.2025",
-            "name": "PersonalWebsite",
-            "description": [
-                "Generic personal website",
-                "Uses Context API for global state management.",
-                "Toastify messages to inform user for language and darkmode changes"
-            ],
-            "tags": [
-                "react.js",
-                "tailwindcss",
-                "cypress"
-            ],
-            "url": "https://personal-website-ochre-one-86.vercel.app/",
-            "githubUrl": "https://github.com/SametCeven/PersonalWebsite",
-            "imageUrl": "https://imgur.com/Hz8iDtC.png",
+            "url": "https://wit-flix-theta.vercel.app/",
+            "githubUrl": "https://github.com/SametCeven/WitFlix",
+            "imageUrl": "https://imgur.com/g2N8yEQ.png",
             "videoUrl": ""
         }
     ]

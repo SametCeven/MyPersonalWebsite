@@ -1,4 +1,3 @@
-import "./Header.css"
 import { useContext } from "react"
 import { GlobalContext } from "../contexts/GlobalContext"
 import SliderCheckbox from "../components/SliderCheckbox"

@@ -4,7 +4,7 @@ export default function SliderCheckbox({text,value,handleValue}){
 
     return(
         <div className="flex gap-1 items-center">
-                <label className="switch">
+                <label className="switch flex items-center">
                     <input
                         type="checkbox"
                         onChange={handleValue}

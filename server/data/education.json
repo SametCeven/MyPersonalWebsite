@@ -3,22 +3,24 @@
     [
         {
             "id": "1",
-            "degree": "Executive Master of Arts",
+            "degree": "Master of Arts",
             "school": "Boğaziçi University",
-            "deparment": "Economics and Finance",
+            "department": "Economics and Finance",
             "description": "GPA: 3.80",
             "startDate" : "2018",
-            "endDate" : "2019"
+            "endDate" : "2019",
+            "logoUrl" : "https://imgur.com/csCebsa.png"
             
         },
         {
             "id": "2",
             "degree": "Bachelor of Science",
             "school": "Boğaziçi University",
-            "deparment": "Mechanical Engineering",
-            "description": "Ranked 1026 out of 1.8 million stundets in the college entrance exam of 2011.",
+            "department": "Mechanical Engineering",
+            "description": "Ranked 1026th out of 1.8 million students in the college entrance exam of 2011.",
             "startDate" : "2011",
-            "endDate" : "2017"
+            "endDate" : "2017",
+            "logoUrl" : "https://imgur.com/csCebsa.png"
         }
     ],
     "others":
@@ -26,23 +28,10 @@
         {
             "id" : "1",
             "name" : "WorkInTech",
-            "description" : "Full-stack Development Program (6month, 960 hours, 78 projects)",
+            "description" : "Full-stack Development Program (6 months, 960 hours, 78 projects)",
             "startDate" : "11.2024",
-            "endDate" : "05.2025"
-        },
-        {
-            "id" : "2",
-            "name" : "Istanbul Technical University",
-            "description" : "Big Data & Business Analytics Certification Program",
-            "startDate" : "12.2020",
-            "endDate" : "02.2021"
-        },
-        {
-            "id" : "3",
-            "name" : "Education First",
-            "description" : "Advanced level English course, Los Angeles, USA",
-            "startDate" : "07.2012",
-            "endDate" : "09.2012"
+            "endDate" : "05.2025",
+            "logoUrl" : "https://imgur.com/LJ2F5Hd.png"
         }
         
     ]
