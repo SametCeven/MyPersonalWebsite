@@ -1,12 +1,15 @@
+require("dotenv").config()
 const express = require('express')
 const cors = require("cors")
-const projectData = require("./projectData.json")
-const authenticateApiKey = require("./authenticateApiKey.js")
-
+const authenticateApiKey = require("./services/authenticateApiKey.js")
+const profile = require("./data/profile.json")
+const skills = require("./data/skills.json")
+const projects = require("./data/projects.json")
+const workExperience = require("./data/workExperience.json")
+const education = require("./data/education.json")
 
 const app = express()
 port = 5000
-
 
 app.use(cors())
 app.use(express.json())
@@ -21,11 +24,20 @@ app.get('/api', (req, res) => {
     res.status(200).send("Back-end API works")
 })
 
-app.get("/project",authenticateApiKey,(req,res)=>{
-    res.status(200).json(projectData)
+app.get("/data",authenticateApiKey,(req,res)=>{
+    const combinedData = {
+        profile,
+        skills,
+        projects,
+        workExperience,
+        education
+    }
+    res.status(200).json(combinedData)
 })
 
-app.post("/projectP",authenticateApiKey,(req,res)=>{
+app.post("/dataPost",authenticateApiKey,(req,res)=>{
     const {id} = req.body
     res.json({id})
 })
+
+

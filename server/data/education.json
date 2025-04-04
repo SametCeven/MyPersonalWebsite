@@ -1,0 +1,38 @@
+{
+    "schools": 
+    [
+        {
+            "id": "1",
+            "degree": "Master of Arts",
+            "school": "Boğaziçi University",
+            "department": "Economics and Finance",
+            "description": "GPA: 3.80",
+            "startDate" : "2018",
+            "endDate" : "2019",
+            "logoUrl" : "https://imgur.com/csCebsa.png"
+            
+        },
+        {
+            "id": "2",
+            "degree": "Bachelor of Science",
+            "school": "Boğaziçi University",
+            "department": "Mechanical Engineering",
+            "description": "Ranked 1026th out of 1.8 million students in the college entrance exam of 2011.",
+            "startDate" : "2011",
+            "endDate" : "2017",
+            "logoUrl" : "https://imgur.com/csCebsa.png"
+        }
+    ],
+    "others":
+    [
+        {
+            "id" : "1",
+            "name" : "WorkInTech",
+            "description" : "Full-stack Development Program (6 months, 960 hours, 78 projects)",
+            "startDate" : "11.2024",
+            "endDate" : "05.2025",
+            "logoUrl" : "https://imgur.com/LJ2F5Hd.png"
+        }
+        
+    ]
+}

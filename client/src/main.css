@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+
+@theme {
+    --font-primary: "Inter", "Roboto", "Libre Franklin",  "Satoshi", "sans-serif";
+    --font-satisfy: "Satisfy";
+
+    --color-c1: #1B262C;
+    --color-c2: #0F4C75;
+    --color-c3: #3282B8;
+    --color-c4: #BBE1FA;
+
+    --radius-my1:5px;
+    --radius-my2:10px;
+
+}
+
+
+.initial{
+  @apply flex flex-col border-b-1 py-15;
+}
+
+.title1{
+  @apply py-5 text-5xl text-c3;
+}
+
+.title2{
+  @apply text-xl font-bold;
+}
+
+.tag{
+  @apply p-1 text-c2 border-1 border-c2 rounded-my1;
+}
+
+.tag-dm{
+  @apply p-1 text-c4 border-1 border-c4 rounded-my1;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: var(--color-c4);
+  border-radius: var(--radius-my2);
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: var(--color-c1);
+  border-radius: var(--radius-my2);
+}
+
+.nav-item{
+  @apply flex items-center gap-2 border-b border-transparent transition-all p-1 rounded-my2;
+}
+.nav-item:hover{
+  @apply bg-c1
+}
+.nav-item-active{
+  @apply bg-c1;
+}
+
+.logo-hover{
+  @apply transition duration-300 hover:text-c2 hover:opacity-80 hover:scale-75;
+}
+
+.logo-hover-noclick{
+  @apply transition duration-300 hover:text-c2 hover:opacity-80 hover:scale-150;
+}
+
+.logo-hover-dm{
+  @apply transition duration-300 hover:text-c4 hover:opacity-80 hover:scale-75;
+}
+
+.logo-hover-noclick-dm{
+  @apply transition duration-300 hover:text-c4 hover:opacity-80 hover:scale-150;
+}
+
+.logo-dm{
+  @apply text-3xl text-c4;
+}
+
+.logo{
+  @apply text-3xl text-c2;
+}
+
+

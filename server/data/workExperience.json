@@ -1,0 +1,56 @@
+{
+    "workExperience":
+    [
+        {
+            "id" : 1,
+            "company" : "CARUS",
+            "startingDate" : "06.2022",
+            "endDate" : "07.2023",
+            "title" : "International Business Analyst",
+            "description" : 
+            [
+                "Carus is a group firm of Saat&Saat, a well-known global retail company. Carus specializes in e-commerce and bag industry.",
+                "Responsible for financial reporting, financial modelling, sales reporting and pricing."
+            ],
+            "logoUrl" : "https://imgur.com/wUsvtDG.png"
+        },
+        {
+            "id" : 2,
+            "company" : "BESFIN Financial Services Consultancy and Trade Co.",
+            "startingDate" : "03.2020",
+            "endDate" : "10.2020",
+            "title" : "Consultant",
+            "description" : 
+            [
+                "BESFIN is a corporate finance consultancy firm providing advisory services in regards to M&A activities, project finance deals and, corporate finance.",
+                "Responsible for financial modelling, financial due diligence and industry research."
+            ],
+            "logoUrl" : "https://imgur.com/zhWTreD.png"
+        },
+        {
+            "id" : 3,
+            "company" : "QNB Finansbank",
+            "startingDate" : "11.2017",
+            "endDate" : "08.2018",
+            "title" : "Assistant Supervisor",
+            "description" : 
+            [
+                "QNB Finansbank is one of the largest commercial banks in Turkey.",
+                "Responsible for financial analysis and sales."
+            ],
+            "logoUrl" : "https://imgur.com/ww8Ysp8.png"
+        },
+        {
+            "id" : 4,
+            "company" : "Groupe Renault",
+            "startingDate" : "07.2016",
+            "endDate" : "09.2016",
+            "title" : "R&D Intern",
+            "description" : 
+            [
+                "Responsible for conducting numerical analysis via MATLAB for the new advanced front lightning system."
+            ],
+            "logoUrl" : "https://imgur.com/n8sJizt.png"
+         }
+    ]
+}

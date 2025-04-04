@@ -1,40 +1,36 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import axios from "axios"
-const API_KEY = import.meta.env.API_KEY
+import { useContext } from 'react'
+import { GlobalContext } from './contexts/GlobalContext'
+import Navbar from './layout/Navbar'
+import Profile from './layout/Profile'
+import MainLayout from './layout/MainLayout'
+
 
 export default function App() {
-
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios.get("https://sametceven-server.vercel.app/api",{ 
-      "headers": { 
-        "x-api-key": API_KEY 
-        }
-      }
-    )
-      .then((response) => {
-        setData(response.data.users)
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-  }, [])
-
-
-
+  const { darkMode, scrollContainerRef } = useContext(GlobalContext)
 
   return (
-    <div>
-      <p className='bg-black text-white'>hello</p>
-      {data === undefined ? <p>Loading</p> :
-        data.map((datum) =>
-          <p key={datum}> {datum} </p>
-        )
-      }
-      <p>asdfads</p>
+    <div className={`${darkMode ? "bg-c1 text-white" : "bg-white"} flex justify-center transition duration-300 font-primary max-xl:w-screen`}>
+
+      <div className='flex h-screen items-center max-xl:flex-col'>
+
+        <div className={`flex flex-col justify-between w-3xs max-w-3xs max-xl:flex-row max-xl:justify-center max-xl:max-w-screen`}>
+          <Profile></Profile>
+        </div>
+
+        <div className='max-md:flex flex-col items-center'>
+          <Navbar></Navbar>
+          <div className={`max-w-5xl h-[800px] mt-3 border rounded-my2 p-5 ${darkMode ? "border-c4": "border-c2"} max-xl:h-[500px] max-lg:h-[400px] max-lg:max-w-3xl max-md:max-w-[360px] max-sm::max-w-[360px]`}>
+            <div className='h-[750px] overflow-y-auto scrollbar-custom pr-5 max-xl:h-[450px] max-lg:h-[300px] ' ref={scrollContainerRef}>
+              <MainLayout></MainLayout>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   )
+
 }
 
 

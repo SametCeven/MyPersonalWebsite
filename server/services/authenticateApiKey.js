@@ -1,5 +1,3 @@
-require("dotenv").config()
-
 function authenticateApiKey(req,res,next){
     const userApiKey = req.header("x-api-key")
     if(!userApiKey || userApiKey !== process.env.API_KEY){
