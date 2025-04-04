@@ -6,7 +6,13 @@ import MainLayout from './layout/MainLayout'
 
 
 export default function App() {
-  const { darkMode, scrollContainerRef } = useContext(GlobalContext)
+  const { darkMode, scrollContainerRef, error } = useContext(GlobalContext)
+
+  if(error){
+    return(
+      <p> {error} </p>
+    )
+  }
 
   return (
     <div className={`${darkMode ? "bg-c1 text-white" : "bg-white"} flex justify-center transition duration-300 font-primary max-xl:w-screen`}>
