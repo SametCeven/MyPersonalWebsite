@@ -3,6 +3,7 @@ import { GlobalContext } from './contexts/GlobalContext'
 import Navbar from './layout/Navbar'
 import Profile from './layout/Profile'
 import MainLayout from './layout/MainLayout'
+import { Analytics } from "@vercel/analytics/react"
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
 
   return (
     <div className={`${darkMode ? "bg-c1 text-white" : "bg-white"} flex justify-center transition duration-300 font-primary max-xl:w-screen`}>
+      <Analytics></Analytics>
 
       <div className='flex h-screen items-center max-xl:flex-col'>
 
