@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { GlobalContext } from './contexts/GlobalContext'
 import Navbar from './layout/Navbar'
 import Profile from './layout/Profile'
@@ -9,8 +9,8 @@ import { Analytics } from "@vercel/analytics/react"
 export default function App() {
   const { darkMode, scrollContainerRef, error } = useContext(GlobalContext)
 
-  if(error){
-    return(
+  if (error) {
+    return (
       <p> {error} </p>
     )
   }
@@ -27,7 +27,7 @@ export default function App() {
 
         <div className='max-md:flex flex-col items-center'>
           <Navbar></Navbar>
-          <div className={`max-w-5xl h-[800px] mt-3 border rounded-my2 p-5 ${darkMode ? "border-c4": "border-c2"} max-xl:h-[500px] max-lg:h-[400px] max-lg:max-w-3xl max-md:max-w-[360px] max-sm::max-w-[360px]`}>
+          <div className={`max-w-5xl h-[800px] mt-3 border rounded-my2 p-5 ${darkMode ? "border-c4" : "border-c2"} max-xl:h-[500px] max-lg:h-[400px] max-lg:max-w-3xl max-md:max-w-[360px] max-sm::max-w-[360px]`}>
             <div className='h-[750px] overflow-y-auto scrollbar-custom pr-5 max-xl:h-[450px] max-lg:h-[300px] ' ref={scrollContainerRef}>
               <MainLayout></MainLayout>
             </div>
