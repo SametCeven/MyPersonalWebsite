@@ -11,7 +11,7 @@ export default function Education() {
 
             <h1 className="title1">Education</h1>
 
-            <div className="flex flex-col gap-5 text-xs">
+            <div className="flex flex-col gap-5">
 
                 <div className="flex max-xl:flex-col max-xl:gap-5">
                     {loading ? <p>Loading</p> : data.education.schools.map((school, index) =>
@@ -28,7 +28,7 @@ export default function Education() {
                                     <span> - </span>
                                     <span key={school.endDate}> {school.endDate} </span>
                                 </div>
-                                <span> {school.description} </span>
+                                <span className="text-xs"> {school.description} </span>
                             </div>
                         </div>
                     )}
@@ -47,7 +47,7 @@ export default function Education() {
                                     <span> - </span>
                                     <span key={other.endDate}> {other.endDate} </span>
                                 </div>
-                                <span key={other.description}> {other.description} </span>
+                                <span className="text-xs" key={other.description}> {other.description} </span>
                             </div>
                         </div>
                     )}

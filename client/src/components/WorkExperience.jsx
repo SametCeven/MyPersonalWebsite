@@ -11,7 +11,7 @@ export default function WorkExperience() {
 
             <h1 className="title1">Work Experience</h1>
 
-            <div className="flex flex-wrap justify-between gap-10 text-xs">
+            <div className="flex flex-wrap justify-between gap-10">
 
                 {loading ? <p>Loading</p> : data.workExperience.workExperience.map((work, index) =>
 

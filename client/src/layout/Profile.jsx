@@ -21,12 +21,12 @@ export default function Profile() {
         <div className="py-10">
 
             {loading ? <p>Loading...</p> :
-                <div className="flex flex-col gap-5 text-xs w-60 max-xl:items-center max-xl:w-screen">
+                <div className="flex flex-col gap-5 w-60 max-xl:items-center max-xl:w-screen">
                     <div>
-                        <span className="title1 transition-all duration-200 hover:scale-120"> {data.profile.name} </span>
+                        <span className="title1 transition-all duration-200 hover:scale-105"> {data.profile.name} </span>
                     </div>
 
-                    <div className="flex flex-col gap-5 max-xl:flex-row max-xl:justify-center max-xl:items-center max-lg:flex-wrap">
+                    <div className="flex flex-col gap-5 max-xl:flex-row max-xl:justify-center max-xl:items-center max-xl:flex-wrap">
                         <div className="flex items-center gap-5 max-lg:gap-1">
                             <FontAwesomeIcon className={`${darkMode ? "logo-dm" : "logo"}`} icon={faCode} />
                             <span className="">Full-stack Developer</span>

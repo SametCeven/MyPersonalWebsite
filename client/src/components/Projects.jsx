@@ -18,7 +18,7 @@ export default function Projects() {
 
                 {loading ? <p>Loading</p> : data.projects.projects.map((project, index) =>
 
-                    <div className="flex gap-10 text-xs max-lg:flex-col max-xl:gap-5" key={index}>
+                    <div className="flex gap-10 max-lg:flex-col max-xl:gap-5" key={index}>
 
                         <div>
                             <a href={project.githubUrl} target="_blank">
@@ -36,7 +36,7 @@ export default function Projects() {
                                     <li key={index}>{desc}</li>
                                 )}
                             </ul>
-                            <div className="flex gap-5">
+                            <div className="flex gap-5 text-xs">
                                 {project.tags.map((tag, index) =>
                                     <span className={`${darkMode ? "tag-dm" : "tag"}`} key={index}>{tag}</span>
                                 )}
