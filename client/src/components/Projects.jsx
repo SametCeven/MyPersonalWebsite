@@ -10,7 +10,7 @@ export default function Projects() {
 
 
     return (
-        <section className="initial" ref={projectsSectionRef} id="projects">
+        <section className="initial max-md:text-xs" ref={projectsSectionRef} id="projects">
 
             <h1 className="title1">Projects</h1>
 

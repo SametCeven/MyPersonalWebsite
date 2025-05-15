@@ -19,7 +19,7 @@ export default function App() {
     <div className={`${darkMode ? "bg-c1 text-white" : "bg-white"} flex justify-center transition duration-300 font-primary max-xl:w-screen`}>
       <Analytics></Analytics>
 
-      <div className='flex h-screen items-center max-xl:flex-col'>
+      <div className='flex h-[100dvh] items-center max-xl:flex-col'>
 
         <div className={`flex flex-col justify-between mr-10 w-3xs max-w-3xs max-xl:flex-row max-xl:justify-center max-xl:max-w-screen max-xl:mr-0`}>
           <Profile></Profile>

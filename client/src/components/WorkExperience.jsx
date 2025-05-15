@@ -7,7 +7,7 @@ export default function WorkExperience() {
 
 
     return (
-        <section className="initial" ref={workExperienceSectionRef} id="workExperience">
+        <section className="initial max-md:text-xs" ref={workExperienceSectionRef} id="workExperience">
 
             <h1 className="title1">Work Experience</h1>
 

@@ -7,7 +7,7 @@ export default function Education() {
 
 
     return (
-        <section className="flex flex-col pt-15" ref={educationSectionRef} id="education">
+        <section className="flex flex-col pt-15 max-md:text-xs" ref={educationSectionRef} id="education">
 
             <h1 className="title1">Education</h1>
 
