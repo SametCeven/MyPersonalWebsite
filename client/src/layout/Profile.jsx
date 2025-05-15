@@ -21,7 +21,7 @@ export default function Profile() {
         <div className="py-10">
 
             {loading ? <p>Loading...</p> :
-                <div className="flex flex-col gap-5 w-60 max-xl:items-center max-xl:w-screen">
+                <div className="flex flex-col gap-5 w-60 max-xl:items-center max-xl:w-screen max-md:text-xs">
                     <div>
                         <span className="title1 transition-all duration-200 hover:scale-105"> {data.profile.name} </span>
                     </div>
