@@ -1,6 +1,28 @@
 {
     "projects": [
         {
+            "id": "5",
+            "dateCreated": "20.05.2025",
+            "name": "Twitter",
+            "description": [
+                "Developed a twitter-clone backend with layered architecture including Entity, Repository, Service and Controller layers.",
+                "Built RESTful API for user login, user registration, tweet posting, liking, retweeting.",
+                "Integrated JWT-based authentication and role-based authorization securing endpoints with Spring Security.",
+                "Utilized DTOs and global exception handling",
+                "Wrote unit tests with Junit 5 and Mockito, covering repository and controller layers."
+            ],
+            "tags": [
+                "java",
+                "spring boot",
+                "postgresql",
+                "hibernate"
+            ],
+            "url": "",
+            "githubUrl": "https://github.com/SametCeven/Twitter",
+            "imageUrl": "",
+            "videoUrl": ""
+        },
+        {
             "id": "4",
             "dateCreated": "21.02.2025",
             "name": "PersonalWebsite",
