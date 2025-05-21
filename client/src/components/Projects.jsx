@@ -18,25 +18,27 @@ export default function Projects() {
 
                 {loading ? <p>Loading</p> : data.projects.projects.map((project, index) =>
 
-                    <div className="flex gap-10 max-lg:flex-col max-xl:gap-5" key={index}>
+                    <div className="flex items-center max-lg:items-baseline max-xl:ml-5 max-lg:flex-col gap-10" key={index}>
 
-                        <div>
+                        <div className="">
                             <a href={project.githubUrl} target="_blank">
-                                <img className="w-72 h-48 object-cover rounded-my2" key={index} src={project.imageUrl} alt={project.name} />
+                                <div className="w-72 h-48 overflow-hidden rounded-my2">
+                                    <img className="w-full h-full object-cover object-center" key={index} src={project.imageUrl} alt={project.name} />
+                                </div>
                             </a>
                         </div>
 
-                        <div className="flex flex-col justify-between max-xl:gap-5">
-                            <a href={project.githubUrl} target="_blank">
+                        <div className="flex flex-col justify-between gap-5 max-xl:gap-5">
+                            <a className="" href={project.githubUrl} target="_blank">
                                 <h2 className="title2" key={project.name}> {project.name} </h2>
                             </a>
 
-                            <ul className="">
+                            <ul className="list-disc">
                                 {project.description.map((desc, index) =>
                                     <li key={index}>{desc}</li>
                                 )}
                             </ul>
-                            <div className="flex gap-5 text-xs">
+                            <div className="flex flex-wrap gap-5 text-xs">
                                 {project.tags.map((tag, index) =>
                                     <span className={`${darkMode ? "tag-dm" : "tag"}`} key={index}>{tag}</span>
                                 )}
@@ -48,7 +50,7 @@ export default function Projects() {
                                 {project.url ? <a className={`${darkMode ? "logo-hover-dm" : "logo-hover"}`} key={project.url} href={project.url} target="_blank">
                                     <FontAwesomeIcon icon={faInternetExplorer} className="text-2xl" />
                                 </a> : ""}
-                                
+
                             </div>
                         </div>
                     </div>
