@@ -45,9 +45,10 @@ export default function Projects() {
                                 <a className={`${darkMode ? "logo-hover-dm" : "logo-hover"}`} key={project.githubUrl} href={project.githubUrl} target="_blank">
                                     <FontAwesomeIcon icon={faGithub} className="text-2xl" />
                                 </a>
-                                <a className={`${darkMode ? "logo-hover-dm" : "logo-hover"}`} key={project.url} href={project.url} target="_blank">
+                                {project.url ? <a className={`${darkMode ? "logo-hover-dm" : "logo-hover"}`} key={project.url} href={project.url} target="_blank">
                                     <FontAwesomeIcon icon={faInternetExplorer} className="text-2xl" />
-                                </a>
+                                </a> : ""}
+                                
                             </div>
                         </div>
                     </div>
