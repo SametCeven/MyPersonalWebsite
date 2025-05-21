@@ -27,7 +27,7 @@ export default function WorkExperience() {
                                     <span> {work.endDate} </span>
                                 </div>
                             </div>
-                            <ul className="">
+                            <ul className="list-disc">
                                 {work.description.map((desc, index) =>
                                     <li key={index}>{desc}</li>
                                 )}
