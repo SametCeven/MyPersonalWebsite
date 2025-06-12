@@ -1,6 +1,27 @@
 {
     "projects": [
         {
+            "id": "6",
+            "dateCreated": "12.06.2025",
+            "name": "Ecommerce",
+            "description": [
+                "Developed a responsive Ecommerce web application.",
+                "Implemented product browsing, a shopping card, secure checkout flow with address and payment management.",
+                "Solved complex state management challenges using Redux.",
+                "Designed protected routes to ensure secure access to sensitive pages."
+            ],
+            "tags": [
+                "react.js",
+                "html",
+                "tailwindcss",
+                "redux"
+            ],
+            "url": "",
+            "githubUrl": "https://github.com/SametCeven/Ecommerce",
+            "imageUrl": "https://imgur.com/fCQGxqF.png",
+            "videoUrl": ""
+        },
+        {
             "id": "5",
             "dateCreated": "20.05.2025",
             "name": "Twitter",
@@ -8,7 +29,7 @@
                 "Developed a twitter-clone backend with layered architecture including Entity, Repository, Service and Controller layers.",
                 "Built RESTful API for user login, user registration, tweet posting, liking, retweeting.",
                 "Integrated JWT-based authentication and role-based authorization securing endpoints with Spring Security.",
-                "Utilized DTOs and global exception handling",
+                "Utilized DTOs and global exception handling.",
                 "Wrote unit tests with Junit 5 and Mockito, covering repository and controller layers."
             ],
             "tags": [
