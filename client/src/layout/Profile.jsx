@@ -28,10 +28,6 @@ export default function Profile() {
 
                     <div className="flex flex-col gap-5 max-xl:flex-row max-xl:justify-center max-xl:items-center max-xl:flex-wrap">
                         <div className="flex items-center gap-5 max-lg:gap-1">
-                            <FontAwesomeIcon className={`${darkMode ? "logo-dm" : "logo"}`} icon={faCode} />
-                            <span className="">Full-stack Developer</span>
-                        </div>
-                        <div className="flex items-center gap-5 max-lg:gap-1">
                             <FontAwesomeIcon className={`${darkMode ? "logo-dm" : "logo"}`} icon={faLocationDot} />
                             <span> {data.profile.basedIn} </span>
                         </div>
